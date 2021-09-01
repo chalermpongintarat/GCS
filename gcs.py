@@ -51,7 +51,6 @@ with open("gene_list.txt", "r") as file:
     ###### GeneCards header #####
     f = open("gene_cards_header_for.txt", "w")
     for line in gene_cards_header_for:
-        print(str(line))
         f.write(str(line))
         f.write("\n")
     f.close()
@@ -59,7 +58,6 @@ with open("gene_list.txt", "r") as file:
     ###### GeneCards info #####
     f = open("gene_cards_info_for.txt", "w")
     for line in gene_cards_info_for:
-        print(str(line))
         f.write(str(line))
         f.write("\n")
     f.close()

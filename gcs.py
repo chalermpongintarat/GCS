@@ -34,8 +34,8 @@ with open("gene_list.txt", "r") as file:
         ##### GeneCards info #####
         gc_subsection = soup.find_all('div', attrs={'class':'gc-subsection'})
         gene_cards_info = []
-        for h3 in gc_subsection:
-            info = h3.find_all('p')
+        for p in gc_subsection:
+            info = p.find_all('p')
             gene_cards_info.append(info)
 
         i = gene_cards_info[7]

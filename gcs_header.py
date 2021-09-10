@@ -12,7 +12,7 @@ with open("gene_cards_header_for_list.txt", "r") as file:
 
         ##### Checking # line != "             </h3>" #####
         elif "GeneCards" not in line and line != "<h3>" and line != "             </h3>":
-            new_lines.append("_blank_")
+            new_lines.append("<p>No info</p>")
 
     f = open("gene_cards_header.txt", "w")
     for line in new_lines:

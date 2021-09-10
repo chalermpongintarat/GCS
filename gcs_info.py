@@ -8,7 +8,7 @@ with open("gene_cards_info_for_list.txt", "r") as file:
 
     for line in lines:
         if "_blank_" in line:
-            new_lines.append(line)
+            new_lines.append("<p>No info</p>")
         elif line == "<p>":
             new_lines.append(line)
 
@@ -17,7 +17,7 @@ with open("gene_cards_info_for_list.txt", "r") as file:
             line = line.replace("                                            ", "")
             new_lines.append(line)
         else:
-            new_lines.append("_blank_")
+            new_lines.append("<p>No info</p>")
 
     f = open("gene_cards_info_for.txt", "w")
     for line in new_lines:
@@ -35,7 +35,7 @@ with open("gene_cards_info_for.txt", "r") as file:
 
     for line in lines:
         if "_blank_" in line:
-            new_lines.append(line)
+            new_lines.append("<p>No info</p>")
         elif line == "<p>":
             new_paragraph.append("<p> ")
         elif line != "<p>" and line != "_blank_" and "</p>" not in line and line != "":

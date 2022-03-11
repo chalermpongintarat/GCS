@@ -1,5 +1,6 @@
 with open("gene.txt", "r") as file: 
     lines = file.read().split("\n")
+    
     find = '<a href="/cgi-bin/carddisp.pl?gene='
     replace = '<a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene='
 

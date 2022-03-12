@@ -3,6 +3,9 @@ with open("gene.txt", "r") as file:
     
     find = '<a href="/cgi-bin/carddisp.pl?gene='
     replace = '<a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene='
+    
+    # find = '<a target="_blank" href="/cgi-bin/carddisp.pl?gene='
+    # replace = '<a target="_blank" href="https://www.genecards.org/cgi-bin/carddisp.pl?gene='
 
     href = [] 
     for line in lines:
